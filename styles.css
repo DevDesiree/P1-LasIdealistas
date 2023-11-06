@@ -1,122 +1,116 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-  body {
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #f5f5f5;
-    position: relative;
-    /*z-index: -1;*/
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    /*Cambiar por nuestro color de fondo-->*/
-    background-image: url(./img/FondoFondo.png);
-    height: 2000px;
-  }
 
-  /* Barra de navegacion 
+
+/* -----------------------HEADER/NAV------------------------------ */
+/* Barra de navegacion 
     Donde estaría el icono, y la lista con los accesos a
     Home , Equipo ,Tech&Tools ,Contacto
     *A falta de poner todo, la posicion del header seria fixed para
     que al hacer scrool el navbar sea fijo
 */
 
-header{
-    position: fixed; 
-    top: 0;
-    overflow: hidden;
-    width: 100%;
-    padding: 15px;
-    background-color: #423C3C;
-    text-align: center;
+header {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  padding: 15px;
+  background-color: #423C3C;
+  text-align: center;
+  z-index : 999;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
-/* Aplicar estilos cuando la clase sea active */
+/* Aplicar estilos cuando la clase sea active (PARA JS) */
 nav ul li a.active {
-    font-weight: bold;
-    border-radius: 6px;
+  font-weight: bold;
+  border-radius: 6px;
 }
 
 nav img {
-    max-width: 66px;
-    max-height: 49px;
+  max-width: 66px;
+  max-height: 49px;
 }
 
-nav ul{
-    list-style-type: none;
-    margin: 0; 
-    display: flex; 
-    padding-right: 50px;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  padding-right: 50px;
 }
 
 nav ul li {
-    margin-right: 20px;
-    font-weight: 100;
+  margin-right: 20px;
+  font-weight: 100;
 }
 
 nav a {
-    text-decoration: none;
-    color: #94FFCB;
-    font-family: 'Commissioner', sans-serif;
-    font-size: 18px;
+  text-decoration: none;
+  color: #94FFCB;
+  font-family: 'Commissioner', sans-serif;
+  font-size: 18px;
 }
 
-
-
-nav li a:hover{
-    color: #ffffff;
-    background-color: rgba(0, 255, 115, 0.144);
-    border-radius: 6px;
+nav li a:hover {
+  color: #ffffff;
+  background-color: rgba(0, 255, 115, 0.144);
+  border-radius: 6px;
 }
 
-
-/*____________MAIN____________*/
+/*_____________________________MAIN________________________________*/
 
 p {
   margin: 0px;
 }
 
-#cabecera{
+
+#home img{
   width: 100%;
- position: static;
 }
-section article{
-  width:40%;
+
+section article {
+  width: 40%;
   padding-top: 10vh;
   text-align: center;
   margin: 5% auto 5% auto;
   font-size: 2em;
 }
 
-span{
+span {
   font-weight: 700;
+}
+
+/* ___________________________EQUIPO___________________________________ */
+
+#equipo{
+  padding-top: 100px;
 
 }
 
 #team-content-background {
-  background-image: url("./img/background.png");
-  background-size: cover;
+  background-image: url("./img/equipo-background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   width: 100%;
+  height: 500px;
 }
 
 .team-member-title {
   color: #FFF;
-  font-family: Commissioner;
+  font-family: 'Commissioner';
   font-size: 20px;
   font-style: italic;
   font-weight: 600;
@@ -165,7 +159,7 @@ span{
   align-content: center;
 }
 
-.title-container h2{
+.title-container h2 {
   color: #423c3c;
   font-family: 'Dhurjati';
   font-size: 6vh;
@@ -207,7 +201,8 @@ span{
   transform: rotateY(180deg);
 }
 
-.team-member-front, .team-member-back {
+.team-member-front,
+.team-member-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -277,7 +272,7 @@ span{
 .team-member-role {
   color: white;
   text-align: center;
-  font-family: Commissioner;
+  font-family: 'Commissioner';
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -285,7 +280,12 @@ span{
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* ________TECH_______ */
+/* _________________________TECH__________________________ */
+
+#techtools{
+  margin-bottom: 30px;
+  padding-top: 100px;
+}
 
 #techtools .container-tech {
   display: flex;
@@ -293,7 +293,7 @@ span{
   justify-content: center;
 }
 
-#techtools h2{
+#techtools h2 {
   text-align: center;
   font-family: 'Dhurjati', sans-serif;
   font-size: 85px;
@@ -344,16 +344,32 @@ span{
 }
 
 /*_________FORM________*/
+
+#contacto{
+  padding-top: 50px;
+}
+
+#form-background {
+  background-image: url("./img/formulario-background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+  padding-top: 30px;
+
+}
+
 .formulario {
+
   width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 30px;
   background: #D9c5e6;
-  
-  
+
+
 }
 
 .formulario h3 {
@@ -370,13 +386,15 @@ span{
   margin-bottom: 10px;
 }
 
-.campo-flex.nombre-label, .email-label {
+.campo-flex.nombre-label,
+.email-label {
   align-items: top;
 }
 
 /* Estilos para las etiquetas */
 .campo-flex label {
-  width: 70px; /* Ancho fijo para la etiqueta */
+  width: 70px;
+  /* Ancho fijo para la etiqueta */
   margin-right: 10px;
   font-family: 'Commissioner', sans-serif;
   font-size: 15px;
@@ -384,16 +402,19 @@ span{
 }
 
 /* Estilos para los campos de entrada */
-.campo-flex input[type="text"], .campo-flex input[type="email"], .campo-flex textarea{
+.campo-flex input[type="text"],
+.campo-flex input[type="email"],
+.campo-flex textarea {
   flex: 1;
   padding: 10px;
   border: 1px solid #cccccc33;
   border-radius: 5px;
-  box-shadow: 2px 2px rgb(187, 181, 181); /* Ana-eliminé borde */
-  
+  box-shadow: 2px 2px rgb(187, 181, 181);
+  /* Ana-eliminé borde */
+
 }
 
-.campo-flex textarea::placeholder{
+.campo-flex textarea::placeholder {
   font-family: 'Commissioner', sans-serif;
   font-weight: 100;
   color: #423C3C;
@@ -408,7 +429,8 @@ span{
   border-radius: 8px;
   cursor: pointer;
   margin: 0 auto;
-  box-shadow: 0 2px rgba(87, 83, 83, 0.521); /* Ana-eliminé borde */
+  box-shadow: 0 2px rgba(87, 83, 83, 0.521);
+  /* Ana-eliminé borde */
   font-family: 'Commissioner', sans-serif;
   font-weight: bold;
 }
@@ -423,97 +445,97 @@ aparte de una pequeño map con los enlaces a los diferentes lugares
 
 */
 
-footer{
-    background-color: #423C3C;
-    padding: 20px;  
+footer {
+  background-color: #423C3C;
+  padding: 20px;
 }
 
 footer a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-.footer-container-groups{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.footer-container-groups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.footer-group-1{
-    display: flex;
-    flex-direction: column;
+.footer-group-1 {
+  display: flex;
+  flex-direction: column;
 }
 
-.newsletter{
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    margin-bottom: 15px;
-    font-family: 'Commissioner', sans-serif;
+.newsletter {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: 'Commissioner', sans-serif;
 }
 
-.footer-group-2{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    color :#94FFCB;
-    font-family: 'Commissioner', sans-serif;
-    text-decoration: none;
+.footer-group-2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: #94FFCB;
+  font-family: 'Commissioner', sans-serif;
+  text-decoration: none;
 }
 
 .footer-group-2 p {
-    font-weight: bold;
-    padding: 10px;
+  font-weight: bold;
+  padding: 10px;
 }
 
-.footer-group-2 li{
-    list-style-type: none;
-    margin-left: -40px;
-    padding: 10px 0px 10px 10px;
-    font-weight: 100;
+.footer-group-2 li {
+  list-style-type: none;
+  margin-left: -40px;
+  padding: 10px 0px 10px 10px;
+  font-weight: 100;
 }
 
-.footer-newsletter{
-    display: inline-flex;
-    overflow: hidden;
-    border-radius: 20px;
+.footer-newsletter {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .footer-newsletter label {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
 .footer-newsletter input[type="text"] {
-    border: none;
-    border-radius: 20px 0 0 20px;
-    padding: 10px 40px;
-    font-style: italic;
-    font-family: 'Commissioner', sans-serif;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  padding: 10px 40px;
+  font-style: italic;
+  font-family: 'Commissioner', sans-serif;
 }
 
 .footer-newsletter button {
-    background-color: #94FFCB;
-    font-family: 'Commissioner', sans-serif;
-    font-weight: bold;
-    color: #423C3C;
-    border-radius: 0 20px 20px 0;
-    padding: 10px 15px;
-    cursor: pointer;
-    border: none;
+  background-color: #94FFCB;
+  font-family: 'Commissioner', sans-serif;
+  font-weight: bold;
+  color: #423C3C;
+  border-radius: 0 20px 20px 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
 }
 
-.footer-icons i{
-    color: #ffffff;
-    font-size: 25px;
+.footer-icons i {
+  color: #ffffff;
+  font-size: 25px;
 }
 
 .footer-copyright {
-    color: #ffffff;
-    margin-top: 70px;
-    font-family: 'Commissioner', sans-serif;
-    font-weight: bold;
+  color: #ffffff;
+  margin-top: 70px;
+  font-family: 'Commissioner', sans-serif;
+  font-weight: bold;
 }
