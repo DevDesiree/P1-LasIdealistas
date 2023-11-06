@@ -122,7 +122,7 @@ span {
   color: #FFF;
   text-align: center;
   font-family: 'Commissioner';
-  font-size: 12px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -238,6 +238,7 @@ span {
   fill: url(<path-to-image>), lightgray -326px -90px / 277.811% 151.574% no-repeat;
   filter: drop-shadow(8px 4px 4px rgba(0, 0, 0, 0.30));
   border-radius: 20px;
+
 }
 
 .team-member-front {
@@ -277,6 +278,8 @@ span {
   font-family: 'Commissioner', sans-serif;
   font-size: 12px;
   color: white;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .card-title {
