@@ -149,7 +149,6 @@ span {
   font-size: 20px;  
 }
 
-
 .emoji-container.selected {
   animation: scaleAnimation 0.3s infinite ease; 
 }
