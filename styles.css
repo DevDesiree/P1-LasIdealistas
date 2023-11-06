@@ -143,10 +143,10 @@ span {
 }
 
 #happy-emote ,#happy-emote-1, #happy-emote-2, #happy-emote-3 {
-  font-size: 20px;
+  font-size: 30px;
 }
 #sad-emote, #sad-emote-1,#sad-emote-2,#sad-emote-3{
-  font-size: 20px;  
+  font-size: 30px;  
 }
 
 .emoji-container.selected {
