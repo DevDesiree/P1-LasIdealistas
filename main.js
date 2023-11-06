@@ -17,8 +17,7 @@ window.addEventListener('scroll', function () {
                     menuLinks[index].textContent = "TECH & TOOLS" + '_';
                 } else {
                     menuLinks[index].classList.add('active');
-                    menuLinks[index].textContent = sectionId.toUpperCase() + '_';
-                    
+                    menuLinks[index].textContent = sectionId.toUpperCase() + '_';        
                 }
 
                 
@@ -27,24 +26,22 @@ window.addEventListener('scroll', function () {
                 menuLinks[index].textContent = sectionId.toUpperCase();
 
             }
-            
         }
     });
 });
 
-// Obtén los elementos de los emotes para cada tarjeta
+
 const happyEmotes = document.querySelectorAll('.emoji-container[id^="happy-emote"]');
 const sadEmotes = document.querySelectorAll('.emoji-container[id^="sad-emote"]');
 
-// Agrega un manejador de eventos a cada emote
 happyEmotes.forEach((happyEmote, index) => {
   happyEmote.addEventListener('click', function () {
     if (happyEmotes[index].classList.contains('selected')) {
-        // Si el emote feliz ya está seleccionado, quítale la clase 'selected' y muestra el emote triste
+    
         happyEmotes[index].classList.remove('selected');
         sadEmotes[index].style.display = "block";
       } else {
-        // Si el emote feliz no está seleccionado, agrégale la clase 'selected' y oculta el emote triste
+       
         happyEmotes[index].classList.add('selected');
         sadEmotes[index].style.display = "none";
       }
@@ -54,11 +51,11 @@ happyEmotes.forEach((happyEmote, index) => {
 sadEmotes.forEach((sadEmote, index) => {
   sadEmote.addEventListener('click', function () {
     if (sadEmotes[index].classList.contains('selected')) {
-        // Si el emote triste ya está seleccionado, quítale la clase 'selected' y muestra el emote feliz
+       
         sadEmotes[index].classList.remove('selected');
         happyEmotes[index].style.display = "block";
       } else {
-        // Si el emote triste no está seleccionado, agrégale la clase 'selected' y oculta el emote feliz
+      
         sadEmotes[index].classList.add('selected');
         happyEmotes[index].style.display = "none";
       }
