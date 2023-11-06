@@ -87,6 +87,7 @@ section article {
   text-align: center;
   margin: 5% auto 5% auto;
   font-size: 2em;
+  font-family: 'Commissioner', sans-serif;
 }
 
 span {
@@ -110,7 +111,7 @@ span {
 
 .team-member-title {
   color: #FFF;
-  font-family: 'Commissioner';
+  font-family: 'Commissioner', sans-serif;
   font-size: 20px;
   font-style: italic;
   font-weight: 600;
@@ -121,7 +122,7 @@ span {
 .team-member-description {
   color: #FFF;
   text-align: center;
-  font-family: 'Commissioner';
+  font-family: 'Commissioner', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 300;
@@ -188,7 +189,7 @@ span {
 
 .title-container h2 {
   color: #423c3c;
-  font-family: 'Dhurjati';
+  font-family: 'Dhurjati', sans-serif;
   font-size: 6vh;
   font-style: normal;
   width: 100%;
@@ -302,7 +303,7 @@ span {
 .team-member-role {
   color: white;
   text-align: center;
-  font-family: 'Commissioner';
+  font-family: 'Commissioner', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -364,6 +365,12 @@ span {
   border-radius: 10px;
   box-shadow: 4px 4px #423c3c60;
 }
+
+#techtools .fondo-card-tech:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s; 
+}
+
 
 #techtools .fondo-card-tech img {
   max-width: 80px;
