@@ -136,15 +136,43 @@ span {
 
 .emoji-container {
   font-size: 180%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+
+#happy-emote ,#happy-emote-1, #happy-emote-2, #happy-emote-3 {
+  font-size: 20px;
+}
+#sad-emote, #sad-emote-1,#sad-emote-2,#sad-emote-3{
+  font-size: 20px;  
+}
+
+
+.emoji-container.selected {
+  animation: scaleAnimation 0.3s infinite ease; 
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.2); 
+  }
+  100% {
+    transform: scale(1); 
+  }
 }
 
 .emoji-container::before {
-  content: "\1F600";
+  
   padding: 0 2%;
 }
 
 .emoji-container::after {
-  content: "\1F972";
+
   padding: 0 2%;
 }
 
