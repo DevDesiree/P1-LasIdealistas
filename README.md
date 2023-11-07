@@ -1,20 +1,22 @@
 # P1-LasIdealistas
 Proyecto Grupal de FemCoders! Landing Page de presentación del equipo.
 
+- **Desplegada en Vercel** : [LasIdealistas](https://p1-las-idealistas.vercel.app/)
+
 
 ## Equipo
 
 - Product Owner (PO): [@Isla](https://github.com/islacrur)
 - Scrum Master (SM): [@Desiree](https://github.com/DevDesiree)
-- Desarrolladores (Dev):
+- Desarrolladoras (Dev):
   - [@Ana C](https://github.com/AnaCe-7)
   - [@Yamila](https://github.com/yamiranea)
 
 
-## Mockup, Sketch y Prototipo
+## Sketch, Mockup y Prototipo
 
-Se adjuntan imagenes
-
+Se adjuntan las imágenes correspondientes al sketch, mockup y prototipo :
+ 
 ### Sketch
 <img src="./images-md/sketchKaban.jpg">
 
@@ -30,7 +32,6 @@ Se adjuntan imagenes
 
 ---
 ---
-
 
 
 ## Guía de Instalación
