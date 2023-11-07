@@ -1,0 +1,68 @@
+/* _________________________TECH__________________________ */
+
+#techtools{
+    margin-bottom: 30px;
+    padding-top: 100px;
+  }
+  
+  #techtools .container-tech {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+  #techtools h2 {
+    text-align: center;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 85px;
+    color: #423C3C;
+    font-weight: 300;
+  }
+  
+  #techtools .tech-group1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 440px;
+  }
+  
+  #techtools .tech-group1 .fondo-card-tech:first-child img {
+    max-width: 50%;
+  }
+  
+  #techtools .tech-group2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 575px;
+  }
+  
+  #techtools .fondo-card-tech {
+    background-color: #6100962d;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px #423c3c60;
+  }
+  
+  #techtools .fondo-card-tech:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s; 
+  }
+  
+  
+  #techtools .fondo-card-tech img {
+    max-width: 80px;
+  }
+  
+  #techtools .fondo-card-tech p {
+    font-weight: bold;
+  }

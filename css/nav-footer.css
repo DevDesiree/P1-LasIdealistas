@@ -1,0 +1,163 @@
+/* -----------------------HEADER/NAV------------------------------ */
+/* Barra de navegacion 
+      Donde estaría el icono, y la lista con los accesos a
+      Home , Equipo ,Tech&Tools ,Contacto
+      *A falta de poner todo, la posicion del header seria fixed para
+      que al hacer scrool el navbar sea fijo
+  */
+
+header {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 15px;
+    background-color: #423C3C;
+    text-align: center;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Aplicar estilos cuando la clase sea active (PARA JS) */
+nav ul li a.active {
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+nav img {
+    max-width: 66px;
+    max-height: 49px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    padding-right: 50px;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-weight: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #94FFCB;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 18px;
+}
+
+nav li a:hover {
+    color: #ffffff;
+    background-color: rgba(0, 255, 115, 0.144);
+    border-radius: 6px;
+}
+
+
+/* Footer
+Donde estaria el input del newsletter
+aparte de una pequeño map con los enlaces a los diferentes lugares
+
+*/
+
+footer {
+    background-color: #423C3C;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-container-groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-group-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Commissioner', sans-serif;
+}
+
+.footer-group-2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #94FFCB;
+    font-family: 'Commissioner', sans-serif;
+    text-decoration: none;
+}
+
+.footer-group-2 p {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footer-group-2 li {
+    list-style-type: none;
+    margin-left: -40px;
+    padding: 10px 0px 10px 10px;
+    font-weight: 100;
+}
+
+.footer-newsletter {
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.footer-newsletter label {
+    color: #fff;
+    text-align: center;
+}
+
+.footer-newsletter input[type="email"] {
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 10px 40px;
+    font-style: italic;
+    font-family: 'Commissioner', sans-serif;
+}
+
+.footer-newsletter button {
+    background-color: #94FFCB;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold;
+    color: #423C3C;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.footer-icons i {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.footer-copyright {
+    color: #ffffff;
+    margin-top: 70px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold;
+}

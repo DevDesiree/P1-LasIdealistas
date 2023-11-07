@@ -1,0 +1,95 @@
+/*_________FORM________*/
+
+#contacto {
+    padding-top: 50px;
+}
+
+#form-background {
+    background-image: url("../img/formulario-background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    padding-top: 30px;
+
+}
+
+.formulario {
+
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #D9c5e6;
+
+
+}
+
+.formulario h3 {
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: 'Commissioner', sans-serif;
+}
+
+
+/* Contenedor flex para etiqueta y campo de entrada */
+.campo-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.campo-flex.nombre-label,
+.email-label {
+    align-items: top;
+}
+
+/* Estilos para las etiquetas */
+.campo-flex label {
+    width: 70px;
+    /* Ancho fijo para la etiqueta */
+    margin-right: 10px;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Estilos para los campos de entrada */
+.campo-flex input[type="text"],
+.campo-flex input[type="email"],
+.campo-flex textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc33;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(187, 181, 181);
+    /* Ana-eliminé borde */
+
+}
+
+.campo-flex textarea::placeholder {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 100;
+    color: #423C3C;
+}
+
+/* Estilos para el botón */
+.formulario form button {
+    background-color: #94FFCB;
+    color: #000000;
+    padding: 10px 57px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 0 2px rgba(87, 83, 83, 0.521);
+    /* Ana-eliminé borde */
+    font-family: 'Commissioner', sans-serif;
+    font-weight: bold;
+}
+
+.campo-flex button[type="submit"]:hover {
+    background-color: #60d69d;
+}
