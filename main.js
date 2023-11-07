@@ -30,7 +30,10 @@ window.addEventListener('scroll', function () {
     });
 });
 
-
+// Funcion que busca la clase emoji-container con id especifico
+// Itera por cada uno y añade el evento click
+// Cuando se hace click y depende la condicion se hace una cosa o otra
+// Se añade una clase selected y el display de la otra none
 const happyEmotes = document.querySelectorAll('.emoji-container[id^="happy-emote"]');
 const sadEmotes = document.querySelectorAll('.emoji-container[id^="sad-emote"]');
 
