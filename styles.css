@@ -546,7 +546,7 @@ footer a {
   text-align: center;
 }
 
-.footer-newsletter input[type="text"] {
+.footer-newsletter input[type="email"] {
   border: none;
   border-radius: 20px 0 0 20px;
   padding: 10px 40px;
